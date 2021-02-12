@@ -12,7 +12,7 @@ const readmeFile = (answers) =>
 [Usage]#Usage \n
 [Test]#Test \n
 [Contact]#Contact \n
-Description \n
+Description: \n
 ${answers.desription}\n
 Instruction: \n
 ${answers.instructions}\n
