@@ -11,7 +11,7 @@ const readmeFile = (answers) =>
 [Instruction]#Instrunction\n
 [Usage]#Usage \n
 [Test]#Test \n
-[Contact] \n
+[Contact]#Contact \n
 Description \n
 ${answers.desription}\n
 Instruction: \n
