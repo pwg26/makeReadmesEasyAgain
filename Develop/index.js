@@ -58,7 +58,7 @@ const readmeResponse = () => {
     },
     {
       type: "input",
-      name: "instiallation",
+      name: "instillation",
       message: "What are the instructions for the projects instillation?",
     },
     {
