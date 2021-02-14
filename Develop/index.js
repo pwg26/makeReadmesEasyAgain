@@ -6,23 +6,29 @@ const fs = require("fs");
 // const questions = [];
 
 const readmeFile = (answers) =>
-  `${answers.title} \n 
-[Description]#Description \n
-[Instruction]#Instrunction\n
-[Usage]#Usage \n
-[Test]#Test \n
-[Contact]#Contact \n
-Description: \n
-${answers.desription}\n
-Instruction: \n
-${answers.instructions}\n
-Usage: \n
-${answers.usage}\n
-Test: \n
-${answers.test}\n
-Contact: \n
-Github Profile-  ${answers.title}\n
-Email- ${answers.title}
+  `### ${answers.title} \n 
+## Contents  
+[Description](#Description) \n
+[Instruction](#Instrunction)\n
+[Usage](#Usage)\n
+[Test](#Test)\n
+[Contact](#Contact)\n
+
+*  *  *  *  *
+
+## Description
+${answers.desription}\n\n
+## Instruction
+${answers.instructions}\n\n
+## Usage
+${answers.usage}\n\n
+## Test
+${answers.test}\n\n
+## License
+${answers.license}\n\n
+## Contact
+Github Profile-  https://github.com/${answers.user} \n
+Email- ${answers.email}
 `;
 
 const readmeResponse = () => {
@@ -56,7 +62,7 @@ const readmeResponse = () => {
       type: "list",
       name: "license",
       message: "What are the test instructions",
-      choices: ["x", "y", "z"],
+      choices: ["IBM", "Mozilla", "MIT", "None"],
     },
     {
       type: "input",
@@ -71,8 +77,24 @@ const readmeResponse = () => {
   ]);
 };
 
+function renderLicenseBadge(answers) {
+  switch (answers.license) {
+    case "MIT":
+      answers.license = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) \n https://opensource.org/licenses/MIT"`;
+      break;
+    case "MOZILLA":
+      answers.license = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg) \n https://opensource.org/licenses/MPL-2.0`;
+      break;
+    case "IBM":
+      answers.license = `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg) \n https://opensource.org/licenses/IPL-1.0`;
+      break;
+  }
+  return answers.license;
+}
+
 function init() {
   readmeResponse().then(function (answers) {
+    renderLicenseBadge(answers);
     fs.writeFile("REAME.md", readmeFile(answers), function (err) {
       err ? console.log(err) : console.log("Success!");
     });
