@@ -6,10 +6,10 @@ const fs = require("fs");
 // const questions = [];
 
 const readmeFile = (answers) =>
-  `### ${answers.title} \n 
+  `# ${answers.title} \n 
 ## Contents  
 [Description](#Description) \n
-[Instruction](#Instrunction)\n
+[Instructions](#Instructions)\n
 [Usage](#Usage)\n
 [Test](#Test)\n
 [Contact](#Contact)\n
@@ -27,6 +27,7 @@ ${answers.test}\n\n
 ## License
 ${answers.license}\n\n
 ## Contact
+For any questions or suggestions or improvment reach me at \n
 Github Profile-  https://github.com/${answers.user} \n
 Email- ${answers.email}
 `;
@@ -62,7 +63,7 @@ const readmeResponse = () => {
       type: "list",
       name: "license",
       message: "What are the test instructions",
-      choices: ["IBM", "Mozilla", "MIT", "None"],
+      choices: ["IBM", "MOZILLA", "MIT", "NONE"],
     },
     {
       type: "input",
@@ -80,14 +81,16 @@ const readmeResponse = () => {
 function renderLicenseBadge(answers) {
   switch (answers.license) {
     case "MIT":
-      answers.license = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) \n https://opensource.org/licenses/MIT"`;
+      answers.license = `This project pocesses MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) \n https://opensource.org/licenses/MIT"`;
       break;
     case "MOZILLA":
-      answers.license = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg) \n https://opensource.org/licenses/MPL-2.0`;
+      answers.license = `This project pocesses MOZILLA ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg) \n https://opensource.org/licenses/MPL-2.0`;
       break;
     case "IBM":
-      answers.license = `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg) \n https://opensource.org/licenses/IPL-1.0`;
+      answers.license = `This project pocesses IBM ![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg) \n https://opensource.org/licenses/IPL-1.0`;
       break;
+    default:
+      ``;
   }
   return answers.license;
 }
