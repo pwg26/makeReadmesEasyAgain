@@ -11,7 +11,9 @@ const readmeFile = (answers) =>
 [Description](#Description) \n
 [Instructions](#Instructions)\n
 [Usage](#Usage)\n
-[Test](#Test)\n
+[Test Instructions](#Test Instructions)\n
+[Contributors](#Contributors)\n
+[License](#License)\n
 [Contact](#Contact)\n
 
 *  *  *  *  *
@@ -22,8 +24,10 @@ ${answers.desription}\n\n
 ${answers.instructions}\n\n
 ## Usage
 ${answers.usage}\n\n
-## Test
+## Test Insructions
 ${answers.test}\n\n
+## Contributors
+${answers.contributors}\n\n
 ## License
 ${answers.license}\n\n
 ## Contact
@@ -58,6 +62,11 @@ const readmeResponse = () => {
       type: "input",
       name: "test",
       message: "What are the test instructions",
+    },
+    {
+      type: "input",
+      name: "contributors",
+      message: "List the contributors",
     },
     {
       type: "list",
