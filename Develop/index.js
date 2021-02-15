@@ -1,10 +1,9 @@
-// TODO: Include packages needed for this application
+// utilizes inquire features
 const inquirer = require("inquirer");
+// alows for writing files
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
-// const questions = [];
-
+// skelatal stirng readme content to be filled with user input
 const readmeFile = (answers) =>
   `# ${answers.title} ${answers.badge} \n
 ## Contents  
@@ -39,6 +38,7 @@ Github Profile-  https://github.com/${answers.user} \n
 Email- ${answers.email}
 `;
 
+// inquire prompts
 const readmeResponse = () => {
   return inquirer.prompt([
     {
@@ -95,6 +95,7 @@ const readmeResponse = () => {
   ]);
 };
 
+// renders licensebages depending on user answers
 function renderLicenseBadge(answers) {
   switch (answers.license) {
     case "MIT":
@@ -116,6 +117,7 @@ function renderLicenseBadge(answers) {
   return answers.license, answers.badge;
 }
 
+// takes users ansers to render license, concatinate the skelatal string, then write a new file with the string as the readme content
 function init() {
   readmeResponse().then(function (answers) {
     renderLicenseBadge(answers);
@@ -125,4 +127,5 @@ function init() {
   });
 }
 
+// initializes everything
 init();
