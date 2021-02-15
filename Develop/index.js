@@ -98,16 +98,16 @@ const readmeResponse = () => {
 function renderLicenseBadge(answers) {
   switch (answers.license) {
     case "MIT":
-      answers.license = `[This project pocesses MIT ![[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
-      answers.badge = `![[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+      answers.license = `[This project pocesses MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+      answers.badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
       break;
     case "MOZILLA":
-      answers.license = `This project pocesses MOZILLA ![[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
-      answers.badge = `![[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+      answers.license = `This project pocesses MOZILLA ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+      answers.badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
       break;
     case "IBM":
-      answers.license = `This project pocesses IBM ![[License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)]`;
-      answers.badge = `![[License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)]`;
+      answers.license = `This project pocesses IBM ![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)`;
+      answers.badge = `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)`;
       break;
     default:
       answers.license = ``;

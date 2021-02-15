@@ -1,14 +1,13 @@
+# makeReadmesEasyAgain  
 
-# makeReadmesEasyAgain 
- 
 ## Contents  
 [Description](#Description) 
-
-[Development](#Development)
+ 
+[Development](#Development) 
 
 [Instillation](#Instillation)
 
-[Usage](#Usage)
+[Usage/Instruction](#Usage)
 
 [Tests](#Tests)
 
@@ -22,35 +21,42 @@
 *  *  *  *  *
 
 ## Description
-This repository contains a readme generator that takes user inputs from prompts and uses them as inputs for generating a readme file. The application uses the node package manager "Inquirer" to as the mechanism to generate the command line prompts. This read.me created useing this application
+This repository contains a readme generator that takes user inputs from prompts and uses them as content for generating a readme file. The application uses the node package manager "Inquirer" to act as the mechanism to generate the command line prompts. This read.me created using this application.
+
 
 ## Development
-First a layout was made via pen and paper to properly plan how the apllication would function and appear. Next I installed npm inquier and created the prompts for user input responses for the sections of the eventual readme. input prompts were used for the majority of the question exept for a list prompt which was usded for picking out the licenses. For the list prompt a switch statment was used to pickout the desire licesnse badge image and ur. Then I created the actual string which would serve as the skeloton of the readme and string concatination to add the user resonses to each seaction. Lastely I created a fucntion which intitializes the inquiry prompts, concatonates the users responses to the readme string skeloton then writes the entire read me string to a readme.md file
-
-## Installation
-To intal this application first make sure your donwload node.js from https://nodejs.org/en/. Once you've done this simply clone this repositry to a desired location on your device.
+First a layout was made via pen and paper to properly plan how the application would function and appear. Next I installed npm inquirer and created the prompts for user responses to eventually serve as the sections to the readme. input prompts were used for the majority of the question except for a list prompt which was used for picking out the licenses. For the list prompt a switch statement was used to pickout the desired license badge image and url. Then I created the actual string which would serve as the skeleton of the readme and string concatenation inputs to add the user responses to each section. Lastly I created a function which initializes the inquiry prompts, concatenates the users responses to the readme string skeleton then writes the entire readme string to a readme.md file.
 
 
-## Usage
-To use the application navigate to the repositories location via the command line and run node index.js. You will then be prompted with a series of questions prompting responses which will be the content of the sections to your repository. onces the final qeustion is complete you will be prompted with a success or error statment and if successful a readme.md will be created in the repository.
+## Instillation
+To install this application first make sure your download node.js from https://nodejs.org/en/. Once you've done this simply clone this repository to a desired location on your device.
+
+
+## Usage/Instructions
+Watch my how-to video on youtube https://www.youtube.com/watch?v=W2im_V8dV4s&ab_channel=PierceGladfelter! 
+
+To use the application, the user navigates to the repository's location via the command line then runs node index.js. The user will then be prompted with a series of questions prompting responses which will be the content of the sections to the readme. Once the final question is complete the user will be prompted with a success or error statement and if successful a readme.md will be created in the repository.
+
 
 ## Tests
-There were no tests run in this applications creation.
+There were no tests run in this application's creation.
 
 
 ## Contributors
-This project was created by myself alone
+this project was created by myself alone.
 
 
 ## License
-NONE
+No license was used for this application.
 
 
 ## Contact
-For any questions or suggestions or improve the application reach me at...
+For any questions or suggestions or improvment this project reach me at  -
 
-Github-  https://github.com/pwg26 
+Github Profile-  https://github.com/pwg26 
 
 Email- kcaskade@gmail.com
+
+
 
 
