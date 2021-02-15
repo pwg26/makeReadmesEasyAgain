@@ -10,7 +10,7 @@ const readmeFile = (answers) =>
 [Description](#Description) \n 
 [Development](#Development) \n
 [Instillation](#Instillation)\n
-[Usage/Instruction](#Usage)\n
+[Usage/Instruction](#Usage/Instructions)\n
 [Tests](#Tests)\n
 [Contributors](#Contributors)\n
 [License](#License)\n

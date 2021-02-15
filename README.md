@@ -7,7 +7,7 @@
 
 [Instillation](#Instillation)
 
-[Usage/Instruction](#Usage)
+[Usage/Instruction](#Usage/Instructions)
 
 [Tests](#Tests)
 
