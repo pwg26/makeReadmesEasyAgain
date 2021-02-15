@@ -23,20 +23,23 @@
 ## Description
 This repository contains a readme generator that takes user inputs from prompts and uses them as content for generating a readme file. The application uses the node package manager "Inquirer" to act as the mechanism to generate the command line prompts. This read.me created using this application.
 
+<img src=https://github.com/pwg26/makeReadmesEasyAgain/blob/main/images/img2.png>
+
 
 ## Development
 First a layout was made via pen and paper to properly plan how the application would function and appear. Next I installed npm inquirer and created the prompts for user responses to eventually serve as the sections to the readme. input prompts were used for the majority of the question except for a list prompt which was used for picking out the licenses. For the list prompt a switch statement was used to pickout the desired license badge image and url. Then I created the actual string which would serve as the skeleton of the readme and string concatenation inputs to add the user responses to each section. Lastly I created a function which initializes the inquiry prompts, concatenates the users responses to the readme string skeleton then writes the entire readme string to a readme.md file.
 
+<img src=https://github.com/pwg26/makeReadmesEasyAgain/blob/main/images/img4.png>
 
 ## Instillation
 To install this application first make sure your download node.js from https://nodejs.org/en/. Once you've done this simply clone this repository to a desired location on your device.
-
 
 ## Usage/Instructions
 Watch my how-to video on youtube https://www.youtube.com/watch?v=W2im_V8dV4s&ab_channel=PierceGladfelter! 
 
 To use the application, the user navigates to the repository's location via the command line then runs node index.js. The user will then be prompted with a series of questions prompting responses which will be the content of the sections to the readme. Once the final question is complete the user will be prompted with a success or error statement and if successful a readme.md will be created in the repository.
 
+<img src=https://github.com/pwg26/makeReadmesEasyAgain/blob/main/images/img5.png>
 
 ## Tests
 There were no tests run in this application's creation.
